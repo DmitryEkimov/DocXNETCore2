@@ -5,6 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\default_styles.xml.gz" />
+    <None Remove="Resources\numbering.default_bullet_abstract.xml.gz" />
+    <None Remove="Resources\numbering.default_decimal_abstract.xml.gz" />
+    <None Remove="Resources\numbering.xml.gz" />
+    <None Remove="Resources\styles.xml.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\default_styles.xml.gz" />
+    <EmbeddedResource Include="Resources\numbering.default_bullet_abstract.xml.gz" />
+    <EmbeddedResource Include="Resources\numbering.default_decimal_abstract.xml.gz" />
+    <EmbeddedResource Include="Resources\numbering.xml.gz" />
+    <EmbeddedResource Include="Resources\styles.xml.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CoreCompat.System.Drawing.v2" Version="5.2.0-preview1-r131" />
     <PackageReference Include="System.IO.Packaging" Version="4.4.0" />
     <PackageReference Include="System.Security.Principal.Windows" Version="4.4.0" />

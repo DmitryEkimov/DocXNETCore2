@@ -4,11 +4,14 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.IO.Packaging;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
+
+[assembly: InternalsVisibleTo("DocX.UnitTest")]
 
 namespace Novacode
 {
